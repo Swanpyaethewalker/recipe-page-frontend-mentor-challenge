@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.mobile {
+  display: none;
+}
+body {
+  background: hsl(30, 54%, 90%);
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 2.5em;
+  border-radius: 15px;
+  margin: 12.5vh 25vw;
+}
+ul li {
+  display: block;
+}
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+h1.title {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 700;
+  margin: 1em 0em;
+}
+.desc {
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  font-size: 1em;
+  letter-spacing: 0.025em;
+}
+.prep {
+  padding: 2em;
+  background: hsl(330, 100%, 98%);
+  margin: 2em 0em;
+  border-radius: 4px;
+}
+.prep h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 400;
+  font-family: "Young Serif", sans-serif;
+}
+.prep ul li:before {
+  color: hsl(332, 51%, 32%);
+  content: "• ";
+  margin-right: 1em;
+}
+.prep ul li {
+  margin: 1em 0;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+.prep ul li strong {
+  font-family: "Outfit";
+  margin-right: 0.2em;
+  color: hsl(30, 10%, 34%);
+}
+.ingredients {
+  padding-bottom: 2em;
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+.ingredients h2 {
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 1em;
+  font-family: "Young Serif", sans-serif;
+}
+.ingredients li {
+  margin: 0.6em 0;
+  color: hsl(24, 5%, 18%);
+  font-style: normal;
+  font-weight: 400;
+}
+.ingredients ul li:before {
+  color: hsl(14, 45%, 36%);
+  content: "• ";
+  margin-right: 1em;
+}
+hr {
+  color: hsl(30, 18%, 87%);
+}
+.instruction {
+  font-family: "Young Serif", sans-serif;
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+  padding-bottom: 1.5em;
+}
+.instruction h2 {
+  color: hsl(14, 45%, 36%);
+  margin: 1em 0em;
+  font-family: "Young Serif", sans-serif;
+}
+.instruction ol {
+  margin-left: 1em;
+}
+.instruction ol li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.instruction ol li {
+  padding-left: 1em;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.75;
+  letter-spacing: 0.025em;
+  margin: 0.5em 0;
+}
+.instruction ol li strong {
+  margin-right: 0.4em;
+  color: hsl(24, 5%, 18%);
+  font-weight: 700;
+}
+.nutrition {
+  padding-top: 2em;
+}
+.nutrition h2 {
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 1em;
+  font-family: "Young Serif", sans-serif;
+}
+.nutrition p {
+  margin: 2em 0;
+}
+.nutrition .row {
+  display: flex;
+  margin: 1em 0;
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+  padding-bottom: 1em;
+}
+.nutrition .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0em;
+}
+.col1 {
+  padding-left: 2em;
+  color: hsl(30, 10%, 34%);
+}
+.col1,
+.col2 {
+  display: inline-block;
+  width: 50%;
+}
+.col2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: #fff;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile img {
+    width: 100%;
+    height: auto;
+  }
+  .mobile-container {
+    margin: 0 10vw;
+  }
+  h1.title {
+    font-size: 36px;
+  }
+  .container {
+    display: none;
+  }
+  .nutrition {
+    margin-bottom: 2em;
+  }
+}
